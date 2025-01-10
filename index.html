@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="Assets/Images/avatar.png" alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="LolexDev">LolexDev</h1>
+                    <p class="title">Lua Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:contact@lolexdev.com" class="contact-link">contact@lolexdev.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Discord</p>
+
+                            <address>lolexxd</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://www.youtube.com/@lolexXD." class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>Hi, I'm LolexDev, a passionate self-learning developer specializing in Lua scripting for FiveM ESX and QB. With a strong focus on creating immersive and interactive experiences, I enjoy pushing the boundaries of what's possible in game development. My journey into coding started with a simple curiosity and has grown into a dedicated pursuit of excellence in development.</p>
+                    <p>I'm always eager to learn new technologies and improve my skills. Whether it's debugging intricate scripts or creating new features, I thrive on challenges and enjoy finding creative solutions to complex problems. My goal is to contribute to the community by developing high-quality scripts and sharing my knowledge with others.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Fivem Scripting</h4>
+                                <p class="service-item-text">High-quality development of custom FiveM scripts for ESX & QB frameworks at a professional level.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+                    </section>
+                </div>
+
+                <section class="partners">
+                    <h3 class="h3 partners-title">Partnerships</h3>
+
+                    <ul class="partners-list has-scrollbar">
+                        <li class="partners-item">
+                            <a href="https://debbugdevelopment.tebex.io/">
+                                <img src="https://dunb17ur4ymx4.cloudfront.net/webstore/logos/34f91859ccdccaf0855ebb541cda9fb736b3178f.png" alt="logo" style="width: 150px;">
+                              </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>ESX</button></li>
+                        <li class="filter-item"><button data-filter-btn>QB</button></li>
+                        <li class="filter-item"><button data-filter-btn>Standalone</button></li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>ESX</button></li>
+                            <li class="select-item"><button data-select-item>QB</button></li>
+                            <li class="select-item"><button data-select-item>Standalone</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <!-- <li class="project-item active" data-filter-item data-category="standalone">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">test</h3>
+                                <p class="project-category">ESX</p>
+                            </a>
+                        </li> -->
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="Assets/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
